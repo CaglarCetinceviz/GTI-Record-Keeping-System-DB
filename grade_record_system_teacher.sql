@@ -40,7 +40,7 @@ CREATE TABLE `teacher` (
   PRIMARY KEY (`teacher_id`),
   KEY `fk_teacher_administer1_idx` (`admin_id`),
   CONSTRAINT `fk_teacher_administer1` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`admin_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -49,7 +49,7 @@ CREATE TABLE `teacher` (
 
 LOCK TABLES `teacher` WRITE;
 /*!40000 ALTER TABLE `teacher` DISABLE KEYS */;
-INSERT INTO `teacher` VALUES (2,'1','mark','shaw','mark123','1234567BB','male','mark.shaw@gretb.ie','0891003940','somewhere','in the world','Gort','H91 AA01','01.01.1984'),(3,'1','john','feeney','john123','1234567BA','male','john.feeney@gretb.ie','0892003940','somewhere','in the world','Galway','H91 CC01','01.01.1965'),(4,'1','fiona','holden','fiona123','1234567AA','female','fiona.holden@gretb.ie','0892003040','somewhere','in the world','Galway','H91 DD01','01.01.1975'),(5,'1','DECLAN','DOHERTY','[C@2842ee50','1234567CC','MALE','declan.doherty@gretb.ie','0892003050','SOMEWHERE','IN THE WORLD','ATHENRY','H91 EE01','05.03.1976'),(6,'1','UNA','MCMANUS','una123','1234567AB','FEMALE','una.keary@gretb.ie','0891002030','SOMEWHERE','ADDRESS LINE TWO','CLAREGALWAY','H91 BB01','01.01.1980');
+INSERT INTO `teacher` VALUES (2,'1','mark','shaw','mark123','1234567BB','male','mark.shaw@gretb.ie','0891003940','somewhere','in the world','Gort','H91 AA01','01.01.1984'),(3,'1','john','feeney','john123','1234567BA','male','john.feeney@gretb.ie','0892003940','somewhere','in the world','Galway','H91 CC01','01.01.1965'),(4,'1','fiona','holden','fiona123','1234567AA','female','fiona.holden@gretb.ie','0892003040','somewhere','in the world','Galway','H91 DD01','01.01.1975'),(5,'1','DECLAN','DOHERTY','[C@2842ee50','1234567CC','MALE','declan.doherty@gretb.ie','0892003050','SOMEWHERE','IN THE WORLD','ATHENRY','H91 EE01','05.03.1976'),(6,'1','una','mcmanus','[C@6a56167','1234567AB','FEMALE','una.keary@gretb.ie','0891002030','SOMEWHERE','ADDRESS LINE TWO','CLAREGALWAY','H91 BB01','01.01.1980'),(24,'1','John','Doe','john123','1234567PP','male','johndoe@gretb.ie','0871234567','Eyre Square','','Galway','H91 ES01','05.03.1990');
 /*!40000 ALTER TABLE `teacher` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -62,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-13 13:57:05
+-- Dump completed on 2025-05-09 20:11:19
